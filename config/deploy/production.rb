@@ -54,8 +54,8 @@ server "54.65.11.50",
   roles: %w{web app},
   ssh_options: {
     user: "ec2-user", # overrides user setting above
-    keys: %w(/Downloads/tsuru_tokyo_sample.pem),
+    keys: %w(~/Downloads/tsuru_tokyo_sample.pem),
     forward_agent: false,
-    auth_methods: %w(publickey password)
+    # auth_methods: %w(publickey password)
     # password: "please use keys"
   }

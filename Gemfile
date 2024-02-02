@@ -44,6 +44,8 @@ group :development do
   gem 'spring'
   gem "capistrano", "~> 3.10", require: false
   gem "capistrano-rails", "~> 1.6", require: false
+  gem 'capistrano-safe-deploy-to'
+  gem 'capistrano-rbenv', '~> 2.2'   # 追記
 end
 
 group :test do

@@ -3,7 +3,9 @@ lock "~> 3.18.0"
 set :application, "blog_app"
 set :bundle_without, %w{test}.join(':')
 set :application, "my_app_name"
-set :repo_url, "git@github.com:TsuruKouhei/Capistrano_task.git"
+set :repo_url, "https://github.com/TsuruKouhei/Capistrano_task.git"
+set :rbenv_version, '3.0.1'   # 追記
+
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
