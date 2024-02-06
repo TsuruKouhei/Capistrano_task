@@ -1,3 +1,20 @@
 // Place all the styles related to the blogs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+html, body {
+  height: 100%; /* ページ全体の高さを100%に設定 */
+  margin: 0; /* デフォルトのマージンを取り除く */
+  padding: 0; /* デフォルトのパディングを取り除く */
+}
+.blog-images {
+  display: grid;
+  place-items: end center; /* 垂直方向の下部と水平方向の中央に配置 */
+  width: 100%; /* 幅を画面全体に広げる */
+  max-height: 300px; /* 最大高さを設定 */
+  margin: auto; /* 上下左右のマージンを自動調整して中央揃え */
+}
+
+.blog-images img {
+  max-width: 600px; /* 画像の最大幅を制限 */
+  height: auto; /* 高さを自動で調整し、アスペクト比を維持 */
+}
