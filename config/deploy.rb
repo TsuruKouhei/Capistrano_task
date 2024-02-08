@@ -5,6 +5,7 @@ set :bundle_without, %w{test}.join(':')
 set :application, "my_app_name"
 set :repo_url, "https://github.com/TsuruKouhei/Capistrano_task.git"
 set :rbenv_version, '3.0.1'   # 追記
+set :rbenv_ruby, '3.0.1'   # 追記
 append :linked_files, 'config/secrets.yml'   # 追記
 
 # Default branch is :master
